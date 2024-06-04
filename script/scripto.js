@@ -7,6 +7,7 @@ const resultContainer = document.querySelector(".resultContainer")
 //Funções
 const resultTable = (multiplicandNumber, multiplierNumber)=>{
     resultContainer.innerHTML = ""
+    const audio = new Audio("videoplayback.m4a")
     for(let i = 0; i<=multiplierNumber; i++){
         const result = multiplicandNumber * i
         const rowTemplate = `<div class="resultRows">
@@ -18,6 +19,7 @@ const resultTable = (multiplicandNumber, multiplierNumber)=>{
         const row = HTMLTemplate.querySelector(".resultRows")
         resultContainer.appendChild(row)
     }
+    audio.play()
 }
 
 
