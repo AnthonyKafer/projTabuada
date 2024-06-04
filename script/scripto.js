@@ -10,8 +10,8 @@ const resultTable = (multiplicandNumber, multiplierNumber)=>{
     for(let i = 0; i<=multiplierNumber; i++){
         const result = multiplicandNumber * i
         const rowTemplate = `<div class="resultRows">
-                            <div class="operation">${multiplicandNumber} X ${multiplierNumber} =</div>
-                            <div class="result">${result}</div>
+                            <div class="operation">${multiplicandNumber} X ${multiplierNumber}</div>
+                            <div class="result">= ${result}</div>
                             </div>`
         const conversor = new DOMParser()
         const HTMLTemplate = conversor.parseFromString(rowTemplate, "text/html")
