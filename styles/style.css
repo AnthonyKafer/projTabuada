@@ -31,6 +31,7 @@ h2{
     font-weight: 200;
     font-size: 20px;
     margin: 30px auto;
+    width: 80%;
 }
 
 label{
@@ -50,8 +51,7 @@ form{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 150px;
+    justify-content:space-around;
 }
 
 .numberContainer{
@@ -92,4 +92,15 @@ input[type=submit]:hover{
     padding: 5px;
     border-bottom: 1px solid black;
     margin-bottom: 10px;
+}
+
+@media (min-width: 600px) and (max-width:764px){
+    form, .resultContainer{
+        width: 80%;
+    }
+}
+@media (min-width: 765px) and (max-width:1200px){
+    form, .resultContainer{
+        width: 80%;
+    }
 }
